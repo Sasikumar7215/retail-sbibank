@@ -19,8 +19,8 @@ function App() {
           <Route path="/retail/enquirystatementconfirm.htm" element={<EnquiryStatementConfirm />} />
           <Route path="/retail/statementbydate.htm" element={<StatementByDate />} />
           <Route path="/retail/accountstatement.htm" element={<AccountStatement />} />
-
         </Routes>
+        <Login />
     </div>
    </Router>
   
