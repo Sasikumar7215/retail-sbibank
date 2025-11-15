@@ -11,7 +11,7 @@
 /* HEADER */
 .sbi-header {
   background-color: #fff;
-  border-bottom: 3px solid #0056b3;
+  /* border-bottom: 3px solid #0056b3; */
 }
 .sbi-online-text {
     color: #69a6fb;
@@ -32,6 +32,9 @@
     /* overflow: hidden; */
     float: right;
     margin: 17px 20px 0 0;
+}
+.navbar-nav li:hover{
+     background-color: #69a6fb;
 }
 #forms, #header_links {
     padding: 0;

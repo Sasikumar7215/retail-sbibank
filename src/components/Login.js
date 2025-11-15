@@ -4,6 +4,9 @@
 import React, { useState } from "react";
 import "./Login.css";
 import LoginForm from "./LoginForm";
+import Header from "./Header";
+import Navbar from "./Navbar";  
+import Footer from "./Footer";
 
 const Login = () => {
   const [loginShow, setLoginShow] = useState(false);
@@ -11,211 +14,21 @@ const Login = () => {
   const handleLoginClick = (e) => {
     e.preventDefault();
     setLoginShow(true);
+    
   };
-
-  const handleProductsClick = (e) => {
-    e.preventDefault();
-    window.open(
-      "/npersonal/productandservices.html",
-      "productservice",
-      "width=780,height=500,status=1,scrollbars=1,location=0"
-    );
-  };
+ 
+ 
 
   return (
     <div className="sbi-page">
-      {/* ===== HEADER ===== */}
-      <header className="sbi-header">
-        <div className="header-top">
-          <div className="logo">
-            <img
-              src="https://retail.onlinesbi.sbi/sbijava/retail/images/sbi_logo.png"
-              alt="SBI Logo"
-            />
-            <div className="sbi-online-text">ONLINE</div>
-          </div>
 
-          <div id="header_navigation">
-            <ul id="forms" className="pull-right">
-              <li id="homeLoanButton">
-                <a
-                  href="https://homeloans.sbi/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  accessKey="3"
-                  title="SBI Home Loan"
-                  aria-label="SBI Home Loan"
-                >
-                  <img
-                    src="/images/HomeLoanButton.png"
-                    alt="SBI Home Loan"
-                    title="SBI Home Loan"
-                  />
-                </a>
-              </li>
-
-              <li className="about">
-                <a
-                  href="/sbijava/retail/html/aboutus.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  accessKey="3"
-                  title="About OnlineSBI"
-                  aria-label="About OnlineSBI"
-                >
-                  About OnlineSBI
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="/npersonal/reg_forms.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Forms"
-                  aria-label="Forms"
-                >
-                  Forms
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="javascript:void(0);"
-                  className="last"
-                  onClick={() => alert('Popup Function Not Implemented')}
-                  aria-label="Net Banking Branches"
-                >
-                  Net Banking Branches
-                </a>
-              </li>
-
-              <li>
-                <div className="dropdown language_selection_btn">
-                  <button
-                    id="dLabel"
-                    className="dropdown-toggle"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                  >
-                    Language <span className="caret"></span>
-                  </button>
-                  <ul
-                    className="dropdown-menu language_selection"
-                    aria-labelledby="dLabel"
-                  >
-                    <li className="dropdown-item">
-                      <a
-                        href="login.htm?languagecode=en"
-                        aria-label="English Language"
-                      >
-                        <span>English</span>
-                      </a>
-                    </li>
-                    <li className="dropdown-item">
-                      <a
-                        href="login.htm?languagecode=hi_IN"
-                        aria-label="Hindi Language"
-                      >
-                        <span>Hindi</span> <span>हिंदी</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </header>
-
-      {/* ===== NAVIGATION ===== */}
-      <div className="row m-0" id="primary_navigation">
-        <nav
-          role="navigation"
-          className="navbar navbar-expand-md navbar-default p-0 navbar-dark"
-          id="navContent"
-        >
-          <button
-            id="ChangeToggle"
-            type="button"
-            data-bs-target="#navbarCollapse"
-            data-bs-toggle="collapse"
-            className="navbar-toggler navbar-btn"
-            aria-label="Main navigation"
-          >
-            <i
-              className="fa fa-bars"
-              style={{ color: "#fff", fontSize: "28px" }}
-            ></i>
-          </button>
-
-          <div className="arrow_icon pull-right d-md-none">
-            <a href="#" className="arrow arrow_up" aria-label="arrow">
-              &nbsp;
-            </a>
-          </div>
-
-          <div
-            id="navbarCollapse"
-            className="collapse navbar-collapse nav-comn"
-          >
-            <ul className="nav navbar-nav" id="navigation">
-              <li className="active_menu">
-                <a href="/" aria-label="Home">
-                  Home
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  onClick={handleProductsClick}
-                  aria-label="Products & Services"
-                >
-                  Products &amp; Services
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="/npersonal/rinb_videos.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="How Do I (Help)"
-                >
-                  How Do I (Help)
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="https://www.sihub.in/managesi/sbi"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Manage Debit Card E-Mandate"
-                >
-                  Manage Debit Card E-Mandate
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="https://retail.sbi.bank.in/npersonal/contact_us.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Contact Us"
-                >
-                  Contact Us
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-
-      {/* ===== MAIN CONTENT ===== */}
       {!loginShow ? (
         <>
+         <Header />
+         <div className="row m-0" id="primary_navigation">
+       <Navbar />
+      </div>
+
           {/* ===== HERO SECTION ===== */}
           <div className="row" id="banner">
             <div className="col-comn col-lg-12 col-md-12 col-sm-12 hidden-xs position-relative">
@@ -427,24 +240,14 @@ const Login = () => {
                         </div>
                       </div>
             </div>
-        
+        {/* ===== FOOTER ===== */}
+      <Footer />
         </>
       ) : (
         <LoginForm />
       )}
 
-      {/* ===== FOOTER ===== */}
-      <footer className="sbi-footer">
-        <div className="footer-left">
-          <img src="/images/veriSign_logo.png" alt="VeriSign" />
-        </div>
-        <div className="footer-right">
-          <p>
-            © State Bank of India | Site best viewed at 1024×768 resolution in
-            Edge 79+, Mozilla 96+, Chrome 97+
-          </p>
-        </div>
-      </footer>
+      
     </div>
   );
 };

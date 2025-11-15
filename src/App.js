@@ -1,30 +1,41 @@
+import { Routes, Route } from "react-router-dom";
 
-import './App.css';
 import Login from "./components/Login";
-import EnquiryStatementConfirm from './components/EnquiryStatementConfirm';
-import StatementByDate from './components/StatementByDate';
-import AccountStatement from './components/AccountStatement';
-import EnquiryTransactionStatement from './components/EnquiryTransactionStatement';
-import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
-function App() {
+import Dashboard from "./components/Dashboard";
+import LoginForm from "./components/LoginForm";
+import AccountPage from "./pages/AccountPage";
+import PaymentPage from "./pages/PaymentPage";
+import BillsPage from "./pages/BillsPage";
+import DepositPage from "./pages/DepositPage";
+import ETaxPage from "./pages/ETaxPage";
+import EServices from "./pages/EServices";
+import Request from "./pages/Request";
+import UserLinks from "./pages/UserLinks";
+// import AccountPage from "./pages/AccountPage";
+export default function App() {
+  // auto-restore last visited module
+  // const last = localStorage.getItem("lastPage") || "accounts";
+
   return (
-    
-      <Router>
-   <div className="App container-fluid">
-      
-        <Routes>
-        
-          <Route path="/retail/login.htm" element={<Login />} />
-          <Route path="/retail/enquirytransactionstatement.htm" element={<EnquiryTransactionStatement/>} />
-          <Route path="/retail/enquirystatementconfirm.htm" element={<EnquiryStatementConfirm />} />
-          <Route path="/retail/statementbydate.htm" element={<StatementByDate />} />
-          <Route path="/retail/accountstatement.htm" element={<AccountStatement />} />
-        </Routes>
-        <Login />
-    </div>
-   </Router>
-  
+    <>
+   
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/loginform" element={<LoginForm />} />
+         <Route path="/dashboard" element={<Dashboard />} />
+         <Route path="/accounts" element={<AccountPage />} />
+          <Route path="/accounts/:section" element={<AccountPage />} />
+               <Route path="/payments/:section" element={<PaymentPage />} />
+               <Route path="/bills/:section" element={<BillsPage />} />
+               <Route path="/deposit/:section" element={<DepositPage />} />
+               <Route path="/tax/:section" element={<ETaxPage />} />
+               <Route path="/services/:section" element={<EServices />} />
+               <Route path="/request/:section" element={<Request />} />
+               <Route path="/userlinks/:section" element={<UserLinks />} />
+          {/* <Route path="/accounts" element={<AccountPage />}/> */}
+      </Routes>
+     {/* <Login /> */}
+   
+   </>
   );
 }
-
-export default App;

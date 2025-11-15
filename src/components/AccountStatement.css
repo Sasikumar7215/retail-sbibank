@@ -1,0 +1,49 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.nav-btn {
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.table th {
+  width: 30%;
+  background-color: #f8f9fa;
+}
+
+.card-header {
+  background-color: #0d6efd !important;
+}
+.sbi-header {
+  background-color: #fff;
+  /* border-bottom: 3px solid #0056b3; */
+}
+.sbi-online-text {
+    color: #69a6fb;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    position: relative;
+    top: -17px;
+    margin-right: 86px;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 1%;
+}
+#header_navigation {
+    /* overflow: hidden; */
+    float: right;
+    margin: 17px 20px 0 0;
+}
+.side-content{
+text-align: left;
+}

@@ -1,0 +1,40 @@
+.menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 1px solid #dcdcdc;
+  padding: 8px 0;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 20px;
+  border-right: 1px solid #dcdcdc;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.menu-item:last-child {
+  border-right: none;
+}
+
+.menu-item:hover {
+  background-color: #f0f6ff;
+}
+
+.menu-image {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  margin-right: 8px;
+}
+
+.menu-text {
+  font-size: 14px;
+  color: #004085; /* SBI blue */
+  font-weight: 500;
+}

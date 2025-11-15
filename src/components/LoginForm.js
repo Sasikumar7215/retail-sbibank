@@ -1,12 +1,37 @@
+/* eslint-disable react/jsx-no-undef */
 /* eslint-disable no-undef */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
  import "./LoginForm.css"; 
+import { useNavigate } from "react-router-dom";
+ import Header from "./Header";
+  import Navbar from "./Navbar";
+  import Footer from "./Footer";
+//  import Login from "./Login";
 
 const LoginForm = () => {
+ const navigate=useNavigate();
+  const handleLoginClick = () => {
+    
+     navigate("/dashboard");
+  };
   return (
-    <form name="quickLookForm" method="post" autoComplete="off">
+    <>
+  
+  {/* {!AccountStatementShow ? ( */}
+    <>
+      <Header />
+       <div className="row m-0" id="primary_navigation">
+             <Navbar />
+       </div>
+     
+   <form 
+  name="quickLookForm" 
+  method="post" 
+  autoComplete="off"
+  onSubmit={(e) => e.preventDefault()}
+>
       <div id="login_block" style={{}}>
 
         <div className="row m-0">
@@ -227,22 +252,22 @@ const LoginForm = () => {
                   </div>
 
                   <div className="form-group">
-                    <input
+                    <button
+                    type="button"
                       style={{ width: "65px" }}
                       className="btn btn-default"
-                      type="submit"
-                      title="Login"
-                      value="Login"
                       id="Button2"
-                    />
-                    <input
+                      onClick={handleLoginClick}>
+                      Login
+                    </button>
+                    <button
                       style={{ width: "65px" }}
                       className="btn btn-default"
-                      type="reset"
-                      title="Reset"
+                      type="button"
+                  
                       id="reset_btn"
-                      value="Reset"
-                    />
+                     >Reset
+                    </button>
                   </div>
                 </div>
 
@@ -528,7 +553,9 @@ const LoginForm = () => {
         value="md5osi9tkkrfcf0i8fdgaog3k36fotek"
       />
     </form>
-    
+    <Footer />
+    </>
+  </> 
   );
 };
 
