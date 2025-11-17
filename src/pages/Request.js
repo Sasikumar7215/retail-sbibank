@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React, { useEffect, useState, useMemo } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import TopMenu from "../components/TopMenu";
@@ -16,9 +16,9 @@ export default function Request() {
   // Memoized sidebar items
   const sidebarItems = useMemo(
     () => [
-      { icon: "📮", label: "Cheque Book Request", path: "chequebook" },
-      { icon: "📑", label: "Account Enquiry", path: "accountenquiry" },
-      { icon: "📬", label: "Service Request", path: "servicerequest" },
+      { label: "Cheque Book Request", path: "chequebook" },
+      { label: "Account Enquiry", path: "accountenquiry" },
+      { label: "Service Request", path: "servicerequest" },
     ],
     []
   );
@@ -74,11 +74,11 @@ export default function Request() {
 
               {/* Example dynamic content */}
               {activeItem === "Cheque Book Request" ? (
-                <p className="text-muted">📮 Request a new cheque book easily.</p>
+                <p className="text-muted">Request a new cheque book easily.</p>
               ) : activeItem === "Account Enquiry" ? (
-                <p className="text-muted">📑 View details or raise queries on your account.</p>
+                <p className="text-muted">View details or raise queries on your account.</p>
               ) : activeItem === "Service Request" ? (
-                <p className="text-muted">📬 Submit various service-related requests.</p>
+                <p className="text-muted"> Submit various service-related requests.</p>
               ) : (
                 <p className="text-muted">
                   Content for <strong>{activeItem}</strong> will be displayed here.
@@ -90,45 +90,5 @@ export default function Request() {
         </div>
       </div>
     </>
-=======
-import React, { useEffect, useState } from "react";
-import TopMenu from "../components/TopMenu";
-import Sidebar from "../components/Sidebar";
-import Breadcrumbs from "../components/Breadcrumbs";
-
-export default function Request() {
-  const pageKey = "requests";
-
-  const sidebarItems = [
-    { icon: "📮", label: "Cheque Book Request" },
-    { icon: "📑", label: "Account Enquiry" },
-    { icon: "📬", label: "Service Request" },
-  ];
-
-  const [activeItem, setActiveItem] = useState(
-    localStorage.getItem("requestsActive") || "Cheque Book Request"
-  );
-
-  useEffect(() => {
-    document.title = "SBI - Requests & Enquiries";
-    localStorage.setItem("lastPage", "requests");
-    localStorage.setItem("requestsActive", activeItem);
-  }, [activeItem]);
-
-  return (
-    <div className="sbi-layout">
-      <TopMenu active={pageKey} />
-      <div className="main-container">
-        <Sidebar items={sidebarItems} active={activeItem} onSelect={setActiveItem} />
-        <div className="content-area slide-fade">
-          <Breadcrumbs currentPage="Requests & Enquiries" currentItem={activeItem} />
-          <div className="card shadow-sm p-4 mt-3">
-            <h4>{activeItem}</h4>
-            <p>Requests & enquiries details appear here.</p>
-          </div>
-        </div>
-      </div>
-    </div>
->>>>>>> 631e2c74a77ad7e9b0266f7e37e07ab77c1bde33
   );
 }

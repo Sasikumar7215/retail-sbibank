@@ -1,7 +1,6 @@
 .menu-container {
   display: flex;
   align-items: center;
-<<<<<<< HEAD
   justify-content: end;
   background: #ffffff;
   /* border: 1px solid #dcdcdc;
@@ -9,20 +8,11 @@
   overflow-x: auto;
   white-space: nowrap;
   margin-right: 165px;
-=======
-  justify-content: center;
-  background: #ffffff;
-  border: 1px solid #dcdcdc;
-  padding: 8px 0;
-  overflow-x: auto;
-  white-space: nowrap;
->>>>>>> 631e2c74a77ad7e9b0266f7e37e07ab77c1bde33
 }
 
 .menu-item {
   display: flex;
   align-items: center;
-<<<<<<< HEAD
   padding: 1px 38px 0px 20px;
   margin: 3px 2px 5px;
   border: 1px solid #004085;
@@ -38,16 +28,6 @@
 .menu-item:first-child {
   border:none;
   padding-right:0px;
-=======
-  padding: 8px 20px;
-  border-right: 1px solid #dcdcdc;
-  cursor: pointer;
-  transition: background 0.2s ease-in-out;
-}
-
-.menu-item:last-child {
-  border-right: none;
->>>>>>> 631e2c74a77ad7e9b0266f7e37e07ab77c1bde33
 }
 
 .menu-item:hover {
@@ -57,20 +37,12 @@
 .menu-image {
   width: 26px;
   height: 26px;
-<<<<<<< HEAD
   /* object-fit: contain; */
-=======
-  object-fit: contain;
->>>>>>> 631e2c74a77ad7e9b0266f7e37e07ab77c1bde33
   margin-right: 8px;
 }
 
 .menu-text {
-<<<<<<< HEAD
   font-size: 12px;
-=======
-  font-size: 14px;
->>>>>>> 631e2c74a77ad7e9b0266f7e37e07ab77c1bde33
   color: #004085; /* SBI blue */
   font-weight: 500;
 }

@@ -14,11 +14,7 @@ const LoginForm = () => {
  const navigate=useNavigate();
   const handleLoginClick = () => {
     
-<<<<<<< HEAD
      navigate("/accounts");
-=======
-     navigate("/dashboard");
->>>>>>> 631e2c74a77ad7e9b0266f7e37e07ab77c1bde33
   };
   return (
     <>

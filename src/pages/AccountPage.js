@@ -3,34 +3,22 @@ import { useNavigate, useParams } from "react-router-dom";
 import TopMenu from "../components/TopMenu";
 import Sidebar from "../components/Sidebar";
 import Breadcrumbs from "../components/Breadcrumbs";
-<<<<<<< HEAD
 import DashboardHeader from "./DashboardHeader";
 import UserInfoBanner from "./UserInfoBanner";
 import "./AccountPage.css";
 // import Menubar from "../components/Menubar";
-=======
->>>>>>> 631e2c74a77ad7e9b0266f7e37e07ab77c1bde33
 
 export default function AccountPage() {
   const navigate = useNavigate();
   const { section } = useParams();
 
   const sidebarItems = [
-<<<<<<< HEAD
     {  label: "Account Summary", path: "accountsummary.htm" },
     {  label: "Account Statement", path: "retailaccountstatement.htm" },
     { label: "e-Statement", path: "retailestatement.htm" },
     { label: "Profile", path: "retailprofile.htm" },
     {  label: "Know Your CIBIL Score", path: "retailcibil.htm" },
     { label: "Set Favourite Links", path: "favourites" },
-=======
-    { icon: "📄", label: "Account Summary", path: "accountsummary.htm" },
-    { icon: "📊", label: "Account Statement", path: "retailaccountstatement.htm" },
-    { icon: "🧾", label: "e-Statement", path: "retailestatement.htm" },
-    { icon: "👤", label: "Profile", path: "retailprofile.htm" },
-    { icon: "⭐", label: "Know Your CIBIL Score", path: "retailcibil.htm" },
-    { icon: "❤️", label: "Set Favourite Links", path: "favourites" },
->>>>>>> 631e2c74a77ad7e9b0266f7e37e07ab77c1bde33
   ];
 
   const [activeItem, setActiveItem] = useState("");
@@ -44,7 +32,6 @@ export default function AccountPage() {
   }, [section]);
 
   return (
-<<<<<<< HEAD
     <>
     <div>
       <DashboardHeader />
@@ -70,33 +57,16 @@ export default function AccountPage() {
       
         <Sidebar
           
-=======
-    <div className="sbi-layout">
-      <TopMenu active="accounts" />
-
-      <div className="main-container">
-        <Sidebar
->>>>>>> 631e2c74a77ad7e9b0266f7e37e07ab77c1bde33
           items={sidebarItems}
           active={activeItem}
           onSelect={(item) => navigate(`/accounts/${item.path}`)}
         />
 
         <div className="content-area slide-fade">
-<<<<<<< HEAD
           
 
           <div className="card shadow-sm mt-3">
             <h6 className="mb-3 active-item">{activeItem}</h6>
-=======
-          <Breadcrumbs
-            currentPage="My Accounts & Profile"
-            currentItem={activeItem}
-          />
-
-          <div className="card shadow-sm p-4 mt-3">
-            <h4 className="mb-3">{activeItem}</h4>
->>>>>>> 631e2c74a77ad7e9b0266f7e37e07ab77c1bde33
 
             {activeItem === "Account Statement" ? (
               <table className="table table-bordered">
@@ -124,9 +94,6 @@ export default function AccountPage() {
         </div>
       </div>
     </div>
-<<<<<<< HEAD
     </>
-=======
->>>>>>> 631e2c74a77ad7e9b0266f7e37e07ab77c1bde33
   );
 }

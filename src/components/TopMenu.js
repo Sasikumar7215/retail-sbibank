@@ -1,11 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 // import "../../global.css";
-<<<<<<< HEAD
 import "./TopMenu.css";
-=======
-
->>>>>>> 631e2c74a77ad7e9b0266f7e37e07ab77c1bde33
 export default function TopMenu({ active }) {
   const navigate = useNavigate();
 
@@ -34,11 +30,7 @@ export default function TopMenu({ active }) {
             src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"
             alt=""
           />
-<<<<<<< HEAD
           <div>{item.label}</div>
-=======
-          <span>{item.label}</span>
->>>>>>> 631e2c74a77ad7e9b0266f7e37e07ab77c1bde33
         </div>
       ))}
     </div>
