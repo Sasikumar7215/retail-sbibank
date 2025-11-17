@@ -1,0 +1,71 @@
+.sbi-header {
+  width: 100%;
+  background: #fff;
+  padding: 8px 15px;
+}
+
+.main-header-top {
+  display: flex;
+  align-items: center;
+}
+
+.sbi-logo {
+  height: 40px;
+}
+
+.sbi-onlinedashboard-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #0b60c6;
+  margin-top:-10px;
+  letter-spacing: 2px;
+}
+.header_navigation {
+    /* overflow: hidden; */
+    float: right;
+    margin: 12px 0px 0 17px;
+}
+.header-nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+.header-nav-list li a {
+  font-size: 14px;
+  color: #004a99;
+  text-decoration: none;
+}
+
+.header-nav-list li a:hover {
+  text-decoration: underline;
+}
+
+.logout-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.logout-online-text {
+  color: #d9534f;
+  font-size: 14px;
+  font-weight: bold;
+}
+.logout{
+    text-align: center;
+}
+#form, #header_links {
+    /* padding: 0;
+    margin: 0; */
+    /* overflow: hidden; */
+    list-style: none;
+}
+#form li {
+    float: left;
+    margin: 0 20px 0 7px;
+    border-right: 1px solid #c1c1c1;
+    font-size: 12px;
+}

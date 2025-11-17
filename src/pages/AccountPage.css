@@ -1,0 +1,29 @@
+.quick-color{
+    background-color: #373d44;
+    color:white;
+    font-size: 12px;
+}
+.side-bar-content{
+    display: flex;
+}
+.breadcrum-style{
+    margin-left:10px;
+    border:1px solid;
+    background-color:#69a6fb; 
+    color: white;
+}
+.content-area{
+    margin-left: 10px;
+}
+.sidebar-title{
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: 14px;
+}
+
+.active-item{
+    font-size: 14px;
+    font-weight: 500;
+    color:#69a6fb;
+    margin-left:8px;
+}

@@ -1,0 +1,67 @@
+.user-banner-container {
+  display: flex;
+  width: 100%;
+  background: #fff;
+  margin-top: 5px;
+  border: 1px solid #dcdcdc;
+}
+
+.banner-left {
+  flex: 3;
+  padding: 12px;
+  background: #eee;
+}
+
+.banner-right {
+  flex: 1;
+  padding: 12px;
+  background: #eee;
+  text-align: right;
+}
+
+.expiry-title {
+  color: #c0452c;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.expiry-value {
+  margin-top: 2px;
+  font-size: 13px;
+}
+
+.expiry-value a {
+  color: #0077cc;
+  text-decoration: underline;
+}
+
+.profile-status-btn {
+  margin-top: 6px;
+  background: #4aa04a;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.welcome-text {
+  font-size: 12px;
+  color: #444;
+}
+
+.user-name {
+  font-weight: bold;
+  color: #003d79;
+}
+
+.user-email {
+  font-size: 12px;
+  color: #003d79;
+}
+
+.user-date {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #444;
+}
