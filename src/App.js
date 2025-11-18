@@ -10,6 +10,8 @@ import ETaxPage from "./pages/ETaxPage";
 import EServices from "./pages/EServices";
 import Request from "./pages/Request";
 import UsefullLinks from "./pages/UsefullLinks";
+import RegistrationForm from "./components/RegistrationForm";
+import LoginSubmit from "./components/LoginSubmit"
 import "./App.css";
 // import AccountPage from "./pages/AccountPage";
 export default function App() {
@@ -22,7 +24,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/loginform" element={<LoginForm />} />
-        
+        <Route path="/loginSubmit" element={<LoginSubmit />}/>
+        <Route path="/register"  element={<RegistrationForm />}/>
          <Route path="/accounts" element={<AccountPage />} />
          <Route path="/payments" element={<PaymentPage />} />
                <Route path="/bills" element={<BillsPage />} />

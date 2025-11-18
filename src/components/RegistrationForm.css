@@ -1,0 +1,96 @@
+.sbi-logo {
+  height: 40px;
+}
+
+.sbi-onlinedashboard-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #0b60c6;
+  margin-top:-10px;
+  letter-spacing: 2px;
+}
+    #wrapper {
+    background: #f6f6f6 none repeat scroll 0 0;
+    box-shadow: 0 0 10px #cfcfcf;
+    position: relative;
+    max-width: 98%;
+}
+#com_container {
+    background: url(/public/images/feeback_bg.png);
+    padding-top: 20px;
+    padding-left: 10px;
+}
+#com_container {
+    min-height: 300px;
+}
+#com_container h2, #faq_content h1, #com_container h1 {
+    background: #e1eef2 none repeat scroll 0 0;
+    color: #16629c;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 20px;
+    padding: 10px;
+}
+#faq_content, #com_container {
+    /* background: #fcfcfc none repeat scroll 0 0; */
+    border-top: 7px solid #1b75bc;
+}
+.ps-4 {
+    padding-left: 1.5rem !important;
+}
+.mandatory_txt {
+    color: #D32A27;
+    font-size: 11px;
+    font-style: italic;
+}
+#com_container div.form-group {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.col-comn, .nav-comn {
+    padding: 0;
+}
+.px-0 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+#refreshImgCaptcha1 {
+    width: 125px;
+    margin-top: -8px;
+    float: left;
+}
+.common_btn .btn {
+    color: #fff;
+    padding: 3px 10px;
+}
+.common_btn .btn-default {
+    background: #A76406 none repeat scroll 0 0;
+    border: 0 none;
+    font-weight: bold;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+#footer_area {
+    background: #414141 none repeat scroll 0 0;
+    border-top: 3px solid #1b75bc;
+    overflow: hidden;
+    padding: 5px;
+}
+.px-0 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+
+.px-3 {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+}
+.float-start {
+    float: left !important;
+}
+.float-end {
+    float: right !important;
+}

@@ -1,49 +1,74 @@
-body {
+.statement-box {
+  width: 100%;
+  max-width: 720px;
+  background: #ffffff;
+  border: 1px solid #d0d0d0;
+  border-radius: 3px;
+  padding: 0;
   font-family: "Segoe UI", Arial, sans-serif;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
 }
 
-.nav-btn {
-  padding: 8px 14px;
-  border-radius: 4px;
-  cursor: pointer;
+.header {
+  background: #e6f0ff;
+  padding: 12px 18px;
+  font-size: 17px;
+  font-weight: 600;
+  border-bottom: 1px solid #cfcfcf;
 }
 
-.nav-btn:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
 }
 
-.table th {
-  width: 30%;
-  background-color: #f8f9fa;
+td {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 18px;
+  vertical-align: top;
 }
 
-.card-header {
-  background-color: #0d6efd !important;
+.label {
+  width: 32%;
+  background: #fafafa;
+  font-weight: 600;
+  color: #222;
 }
-.sbi-header {
-  background-color: #fff;
-  /* border-bottom: 3px solid #0056b3; */
+
+.section-label {
+  background: #f3f3f3 !important;
+  font-weight: 700 !important;
 }
-.sbi-online-text {
-    color: #69a6fb;
-    font-weight: bold;
-    font-size: 20px;
-    letter-spacing: 2px;
-    position: relative;
-    top: -17px;
-    margin-right: 86px;
+
+.value {
+  color: #333;
+  line-height: 1.45;
 }
-.header-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 1%;
-}
-#header_navigation {
-    /* overflow: hidden; */
-    float: right;
-    margin: 17px 20px 0 0;
-}
-.side-content{
-text-align: left;
+
+@media (max-width: 650px) {
+  .statement-box {
+    width: 100%;
+  }
+
+  table,
+  tr,
+  td {
+    display: block;
+    width: 100%;
+  }
+
+  td.label {
+    background: #f0f0f0;
+    border-bottom: none;
+    padding-bottom: 4px;
+    font-weight: 600;
+  }
+
+  td.value {
+    padding-top: 0;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #ddd;
+  }
 }

@@ -8,14 +8,18 @@ import { useNavigate } from "react-router-dom";
  import Header from "./Header";
   import Navbar from "./Navbar";
   import Footer from "./Footer";
+  import LoginSubmit from "./LoginSubmit";
 //  import Login from "./Login";
-
+// import RegistrationForm from "./RegistrationForm";
 const LoginForm = () => {
  const navigate=useNavigate();
   const handleLoginClick = () => {
     
-     navigate("/accounts");
+     navigate("/loginSubmit");
   };
+  const HandleRegisterClick=()=>{
+    navigate("/register");
+  }
   return (
     <>
   
@@ -275,7 +279,7 @@ const LoginForm = () => {
                 <div className="col-lg-6 col-md-6 col-sm-6 forgot_details">
                   <ul className="user_links">
                     <li>
-                      <a href="#" aria-label="New User? Register here/Activate">
+                      <a href="#" onClick={HandleRegisterClick} aria-label="New User? Register here/Activate">
                         New User ? Register here/Activate
                       </a>
                     </li>

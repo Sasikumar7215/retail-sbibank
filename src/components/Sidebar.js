@@ -6,12 +6,7 @@ export default function Sidebar({ items, active, onSelect }) {
   return (
     <>
       {/* Mobile toggle button */}
-      <button 
-        className="sidebar-toggle d-md-none"
-        onClick={() => setOpen(!open)}
-      >
-        ☰ MENU
-      </button>
+    
 
       {/* Sidebar main box */}
       <div className={`sidebar-container ${open ? "open" : ""}`}>

@@ -1,0 +1,223 @@
+#header_navigation {
+    float: right;
+    margin: 0 10px 0 0;
+    overflow: hidden;
+}
+.float-end {
+    float: right !important;
+}
+#header_toplinks, #header_links {
+    list-style: outside none none;
+    overflow: hidden;
+    padding: 0;
+}
+.float-end {
+    float: right !important;
+}
+#header_toplinks li a {
+    color: #444;
+    display: block;
+    margin: 0 10px 0 0;
+}
+#header_links {
+    clear: both;
+    float: right;
+    line-height: 1.5;
+    margin: 0;
+}
+
+#header_toplinks, #header_links {
+    list-style: outside none none;
+    overflow: hidden;
+    padding: 0;
+}
+#header_links {
+    font-size: 12px;
+}
+
+.wpanel_logout {
+    display: block;
+    float: right;
+}
+#icon_logout {
+    background-position: -1012px -102px;
+    color: #444;
+    display: block;
+    height: 27px;
+    margin: 10px 0 0 15px;
+    /* vertical-align: middle; */
+    width: 26px;
+}
+.logout_text {
+    color: #D32A27;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 1px 0;
+}
+#wpanel_userdetails {
+    background: #e9e9e9 none repeat scroll 0 0;
+    border: 1px solid #e9e9e9;
+    overflow: hidden;
+    padding: 3px;
+}
+
+.px-3 {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+}
+#wpanel_username
+
+ {
+    margin: 0 15px 0 0;
+}
+.content_heading {
+    background: #e1eef2 none repeat scroll 0 0;
+    overflow: hidden;
+    padding: 7px;
+}
+.content_heading h3 {
+    color: #16629c;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5px;
+    padding: 0;
+}
+.content_area {
+    overflow: hidden;
+    padding: 12px;
+}
+.content_area p {
+    line-height: 2;
+}
+
+.content_title {
+    color: #39729e;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    padding: 0;
+}
+.mandatory_txt {
+    color: #D32A27;
+    font-size: 11px;
+    font-style: italic;
+}
+.content_area .form-group {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+label {
+    font-weight: 700;
+    color: #333;
+}
+label {
+    display: inline-block;
+}
+.content_area .form-control {
+    /* font-size: 12px; */
+    margin: 0;
+    padding: 0 3px;
+}
+.content_area .form-control {
+    height: 28px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s 
+ease-in-out, box-shadow .15s 
+ease-in-out;
+}
+    .d-md-flex {
+        display: flex !important;
+    }
+.text-center {
+    margin: 10px 0;
+    overflow: hidden;
+}
+.text-center {
+    text-align: center !important;
+}
+.content_area p:last-child {
+    margin: 0;
+}
+.content_area p {
+    line-height: 2;
+}
+.info_panel {
+    background: #fcf5e9 none repeat scroll 0 0;
+    margin: 0 0 10px;
+    overflow: hidden;
+    padding: 12px;
+}
+.notify_icon {
+    /* background: rgba(0, 0, 0, 0) url(../images/notify.png) no-repeat scroll left center; */
+    line-height: 24px;
+    padding: 8px 0 8px 35px;
+}
+.notify_icon ul, .no_marg {
+    margin: 0;
+}
+#footer_area {
+    background: #414141 none repeat scroll 0 0;
+    border-top: 3px solid #1b75bc;
+    overflow: hidden;
+    padding: 5px;
+}
+.p-0 {
+    padding: 0 !important;
+}
+#footer_links {
+    list-style: outside none none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+.float-end {
+    float: right !important;
+}
+#best_view {
+    background: #535353 none repeat scroll 0 0;
+    text-align: center;
+}
+.footbg {
+    background: #535353 none repeat scroll 0 0;
+    overflow: hidden;
+}
+#best_view p {
+    color: #eee;
+    font-size: 11px;
+    margin: 0;
+    padding: 5px;
+}
+.px-3 {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+}
+
+.float-start {
+    float: left !important;
+}
+
+#footer p {
+    color: #fff;
+    margin: 10px 0 0;
+}
+.common_btn .btn-resend {
+    background: #198379 none repeat scroll 0 0;
+    border: 0 none;
+}
+.common_btn .btn {
+    color: #fff;
+    padding: 3px 10px;
+}

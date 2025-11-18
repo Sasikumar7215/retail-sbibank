@@ -1,29 +1,91 @@
-.quick-color{
-    background-color: #373d44;
-    color:white;
-    font-size: 12px;
-}
-.side-bar-content{
-    display: flex;
-}
-.breadcrum-style{
-    margin-left:10px;
-    border:1px solid;
-    background-color:#69a6fb; 
-    color: white;
-}
-.content-area{
-    margin-left: 10px;
-}
-.sidebar-title{
-    padding-left: 10px;
-    padding-top: 5px;
-    font-size: 14px;
+/* ============================================
+   Container Styling (Card-like SBI Look)
+================================================ */
+.statement-box {
+  width: 100%;
+  max-width: 720px;
+  background: #ffffff;
+  border: 1px solid #d0d0d0;
+  border-radius: 3px;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
 }
 
-.active-item{
-    font-size: 14px;
-    font-weight: 500;
-    color:#69a6fb;
-    margin-left:8px;
+/* ============================================
+   Header
+================================================ */
+.header {
+  background: #e6f0ff;
+  padding: 12px 18px;
+  font-size: 17px;
+  font-weight: 600;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+/* ============================================
+   Table Base
+================================================ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+td {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 18px;
+  vertical-align: top;
+}
+
+/* ============================================
+   Labels (Left Column)
+================================================ */
+.label {
+  width: 32%;
+  background: #fafafa;
+  font-weight: 600;
+  color: #222;
+}
+
+/* Section header row (Address Section) */
+.section-label {
+  background: #f3f3f3 !important;
+  font-weight: 700 !important;
+}
+
+/* Value cell */
+.value {
+  color: #333;
+  line-height: 1.45;
+}
+
+/* ============================================
+   Responsive Mobile View
+================================================ */
+@media (max-width: 650px) {
+  .statement-box {
+    width: 100%;
+  }
+
+  table,
+  tr,
+  td {
+    display: block;
+    width: 100%;
+  }
+
+  td.label {
+    background: #f0f0f0;
+    border-bottom: none;
+    padding-bottom: 4px;
+    font-weight: 600;
+  }
+
+  td.value {
+    padding-top: 0;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #ddd;
+  }
 }
